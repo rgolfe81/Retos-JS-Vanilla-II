@@ -10,8 +10,7 @@ const Binario = (A) => {
     let resto;
     while(A>=2){
         resto = Math.floor(A%2);
-        console.log(resto);
-        array.push(resto); 
+        array.unshift(resto); 
         A=A/2;
     }
     array.unshift(Math.floor(A));
